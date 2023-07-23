@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar</title>
     <!-- Css files  -->
-    <link rel="stylesheet" href="Css/normalize.css">
-    <link rel="stylesheet" href="Css/omar.css">
+    <link rel="stylesheet" href="Css/omar.css" id="theme">
     <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/normalize.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    <div class="scroller"></div>
     <!-- Start Header  -->
     <div class="header" id="header">
         <div class="container">
@@ -35,33 +36,33 @@
                                 <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-user fa-fw"></i> Team members</a>
+                                <a href="#team"><i class="far fa-user fa-fw"></i> Team members</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-building fa-fw"></i> Services</a>
+                                <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-check-circle fa-fw"></i> Our skills</a>
+                                <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our skills</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-clipboard fa-fw"></i> How it works</a>
+                                <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How it works</a>
                             </li>
                         </ul>
                         <ul class="links">
                             <li>
-                                <a href="#"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
+                                <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                                <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-play-circle fa-fw"></i> Top videos</a>
+                                <a href="#videos"><i class="far fa-play-circle fa-fw"></i> Top videos</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
+                                <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
                             </li>
                             <li>
-                                <a href="#"><i class="far fa-percent fa-fw"></i> Request A Discount</a>
+                                <a href="#dicount"><i class="far fa-percent fa-fw"></i> Request A Discount</a>
                             </li>
                         </ul>
                     </div>
@@ -72,6 +73,9 @@
     </div>
     <!-- End Header  -->
     <!-- Start Landing  -->
+    <span id="theme" onclick="toggleTheme()">
+        <i class="fa-solid fa-sun"></i>
+    </span>
     <div class="landing">
         <div class="container">
             <div class="text">
@@ -89,6 +93,9 @@
     <!-- End Landing  -->
     <!-- Start Article  -->
     <div class="articles" id="articles">
+        <span class="up-key">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </span>
         <h2 class="main-title">ARTICLES</h2>
         <div class="container">
             <div class="box">
@@ -521,26 +528,26 @@
             <div class="skills">
                 <div class="skill">
                     <h3>HTML <span>78%</span></h3>
-                    <div class="the-progress">
-                        <span style="width: 78%;"></span>
+                    <div class="progress">
+                        <span style="width: 78%"></span>
                     </div>
-                </div>
+                </div>  
                 <div class="skill">
                     <h3>Css <span>85%</span></h3>
-                    <div class="the-progress">
-                        <span style="width: 85%;"></span>
+                    <div class="progress">
+                        <span style="width:85%"></span>
                     </div>
                 </div>
                 <div class="skill">
                     <h3>Java Script <span>95%</span></h3>
-                    <div class="the-progress">
-                        <span style="width: 95%;"></span>
+                    <div class="progress">
+                        <span style="width: 95%"></span>
                     </div>
                 </div>
                 <div class="skill">
                     <h3>Python <span>70%</span></h3>
-                    <div class="the-progress">
-                        <span style="width: 70%;"></span>
+                    <div class="progress">
+                        <span style="width: 70%"></span>
                     </div>
                 </div>
             </div>
@@ -583,24 +590,25 @@
         <div class="dots dots-up"></div>
         <div class="dots dots-down"></div>
         <h2 class="main-title">LATEST EVENTS</h2>
+        <h2 class="happy">The Next Year !</h2>
         <div class="container">
             <img src="images/events.png" alt="">
             <div class="info">
                 <div class="time">
                     <div class="unit">
-                        <span>15</span>
+                        <span class="days">15</span>
                         <span>Days</span>
                     </div>
                     <div class="unit">
-                        <span>08</span>
+                        <span class="hours">08</span>
                         <span>Hours</span>
                     </div>
                     <div class="unit">
-                        <span>45</span>
+                        <span class="minutes">45</span>
                         <span>Minutes</span>
                     </div>
                     <div class="unit">
-                        <span>55</span>
+                        <span class="seconds">55</span>
                         <span>Seconds</span>
                     </div>
                 </div>
@@ -820,5 +828,6 @@
         <p class="copyright">© 2023 <span> Omar </span>All Right Reserved</p>
     </div>
     <!-- End Footer  -->
+    <script src="main.js"></script>
 </body>
 </html>
