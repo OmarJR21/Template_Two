@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
 // end
 
 
-let countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
+let countDownDate = new Date("jun 11, 2024 23:59:59").getTime();
 console.log(countDownDate);
 
 
